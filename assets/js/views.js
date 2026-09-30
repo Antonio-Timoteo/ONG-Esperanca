@@ -1,5 +1,6 @@
 // assets/js/views.js
 import { obterCadastrosSalvos } from "./storage.js";
+import heroImg from "../images/hero-ong.webp";
 
 const projetosDados = [
   {
@@ -41,7 +42,7 @@ export const views = {
     <section id="sobre">
       <h2>Sobre a Nossa ONG</h2>
       <p>Promovemos a inclusão social e a transformação digital.</p>
-      <img src="./assets/images/hero-ong.webp" alt="Voluntários da ONG a lecionar aula de informática para jovens">
+      <img src="${heroImg}" alt="Voluntários da ONG a lecionar aula de informática para jovens">
     </section>
     <section id="contacto">
       <h2>Contacto</h2>
