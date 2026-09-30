@@ -1,4 +1,6 @@
 // assets/js/form.js
+import { salvarCadastro } from "./storage.js";
+import { gerarListaCadastros } from "./views.js";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -27,7 +29,7 @@ function limparErro(inputElement) {
   }
 }
 
-function configurarFormulario() {
+export function configurarFormulario() {
   const formulario = document.getElementById("form-cadastro");
   if (!formulario) return;
 
