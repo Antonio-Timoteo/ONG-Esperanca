@@ -1,4 +1,5 @@
 // assets/js/views.js
+import { obterCadastrosSalvos } from "./storage.js";
 
 const projetosDados = [
   {
@@ -24,7 +25,7 @@ function gerarTemplateProjetos(lista) {
     .join("");
 }
 
-function gerarListaCadastros() {
+export function gerarListaCadastros() {
   const cadastros = obterCadastrosSalvos();
   if (cadastros.length === 0) return "<p>Nenhum cadastro realizado ainda.</p>";
 
@@ -35,7 +36,7 @@ function gerarListaCadastros() {
   `;
 }
 
-const views = {
+export const views = {
   inicio: `
     <section id="sobre">
       <h2>Sobre a Nossa ONG</h2>
