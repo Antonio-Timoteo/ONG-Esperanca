@@ -1,4 +1,7 @@
 // assets/js/main.js
+import './storage.js';
+import './views.js';
+import './form.js';
 
 console.log("Aplicação ONG Esperança carregada com sucesso!");
 
@@ -16,7 +19,11 @@ function render() {
   }
 
   container.innerHTML = content;
-  configurarFormulario();
+
+  // Executa a configuração do formulário apenas na rota de cadastro
+  if (hash === "#cadastro" && typeof configurarFormulario === "function") {
+    configurarFormulario();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
