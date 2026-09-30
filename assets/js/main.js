@@ -1,7 +1,6 @@
 // assets/js/main.js
-import './storage.js';
-import './views.js';
-import './form.js';
+import { views } from "./views.js";
+import { configurarFormulario } from "./form.js";
 
 console.log("Aplicação ONG Esperança carregada com sucesso!");
 
@@ -20,8 +19,8 @@ function render() {
 
   container.innerHTML = content;
 
-  // Executa a configuração do formulário apenas na rota de cadastro
-  if (hash === "#cadastro" && typeof configurarFormulario === "function") {
+  // Executa o listener do formulário apenas quando a aba de cadastro está ativa
+  if (hash === "#cadastro") {
     configurarFormulario();
   }
 }
