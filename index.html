@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ONG Esperança - SPA</title>
 
-  <!-- CDN da biblioteca externa Font Awesome (para ícones) -->
+  <!-- CDN Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Link para o CSS principal -->
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <header>
@@ -24,17 +24,13 @@
     </nav>
   </header>
 
-  <!-- Contêiner principal onde o JavaScript injetará o conteúdo das rotas dinamicamente -->
   <main id="app"></main>
 
   <footer>
     <p>&copy; 2026 ONG Esperança. Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Scripts Modulares JS (carregados na ordem correta com caminho absoluto) -->
-  <script src="/assets/js/storage.js"></script>
-  <script src="/assets/js/views.js"></script>
-  <script src="/assets/js/form.js"></script>
-  <script src="/assets/js/main.js"></script>
+  <!-- Apenas a chamada do main.js com type="module" -->
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
