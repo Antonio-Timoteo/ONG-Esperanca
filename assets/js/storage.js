@@ -1,12 +1,12 @@
 // assets/js/storage.js
 
-function obterCadastrosSalvos() {
-  const dados = localStorage.getItem("ong_cadastros");
-  return dados ? JSON.parse(dados) : [];
+export function salvarCadastro(cadastro) {
+  const cadastros = obterCadastrosSalvos();
+  cadastros.push(cadastro);
+  localStorage.setItem('cadastros', JSON.stringify(cadastros));
 }
 
-function salvarCadastro(novoUsuario) {
-  const cadastros = obterCadastrosSalvos();
-  cadastros.push(novoUsuario);
-  localStorage.setItem("ong_cadastros", JSON.stringify(cadastros));
+export function obterCadastrosSalvos() {
+  const dados = localStorage.getItem('cadastros');
+  return dados ? JSON.parse(dados) : [];
 }
