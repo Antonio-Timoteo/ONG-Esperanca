@@ -41,7 +41,7 @@ export const views = {
     <section id="sobre">
       <h2>Sobre a Nossa ONG</h2>
       <p>Promovemos a inclusão social e a transformação digital.</p>
-      <img src="assets/images/hero-ong.webp" alt="Voluntários da ONG a lecionar aula de informática para jovens">
+      <img src="./assets/images/hero-ong.webp" alt="Voluntários da ONG a lecionar aula de informática para jovens">
     </section>
     <section id="contacto">
       <h2>Contacto</h2>
